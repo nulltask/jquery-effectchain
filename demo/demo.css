@@ -16,7 +16,7 @@ body {
 
 header {
 	display: block;
-	height: 75px;
+	height: auto;
 	background-color: #f5f5f5;
 	-webkit-border-radius: 0 0 5px 5px;
 	-moz-border-radius: 0 0 5px 5px;
@@ -32,7 +32,27 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 1em;
+	padding: 1em 1em 0.5em 1.5em;
+}
+
+header .instruction {
+	margin: 0;
+	padding: 0 1em 1em 2em;
+	font-family: "Georgia", serif;
+	font-style: italic;
+}
+
+header .instruction a {
+	color: #ff6699;
+	-webkit-transition: color 0.5s ease 0;
+	-moz-transition: color 0.5s ease 0;
+	-o-transition: color 0.5s ease 0;
+	-ms-transition: color 0.5s ease 0;
+	transition: color 0.5s ease 0;
+}
+
+header .instruction a:hover {
+	color: #0066ff;
 }
 
 section {
@@ -69,6 +89,7 @@ section {
 	width: 294px;
 	height: 151px;
 	padding: 10px;
+	background-color: #f5f5f5;
 	background: -moz-linear-gradient(top, #f5f5f5, #ffffff);
 	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ffffff)); 
 	-webkit-border-radius: 5px;
@@ -93,7 +114,8 @@ section {
 }
 
 #content section:nth-child(4) {
-	height: 250px;	
+	height: 250px;
+	background-color: #171717;
 	background: -moz-linear-gradient(top, #171717, #767477);
 	background: -webkit-gradient(linear, left top, left bottom, from(#171717), to(#767477)); 
 	-webkit-border-radius: 5px;
